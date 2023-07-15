@@ -36,7 +36,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Tailwind](https://tailwindcss.com/) - JS library
+- [Tailwind](https://tailwindcss.com/)
 
 
 ### What I learned
