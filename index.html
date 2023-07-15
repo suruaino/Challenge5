@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/ee600e9388.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(81, 98%, 78%);
+    }
+  </style>
+</head>
+
+<body class="py-20">
+
+  <main
+    class="flex flex-col md:flex-row md:items-center gap-14 text-white px-6 md:px-20 lg:px-40 max-w-sm md:min-w-full ">
+    <section class="left flex flex-col gap-6 text-center md:text-left ">
+      <h1 class=" font-extrabold text-3xl md:text-4xl lg:text-6xl">Learn to code by watching others</h1>
+      <p class="md:text-xl">See how experinec developers solve problems in real-time. Watching scripted tutorials is
+        great, but understanding our developers think is invaluable.</p>
+    </section>
+
+    <section class="right flex flex-col gap-6 w-full max-w-lg md:max-w-xl">
+      <aside class="try-ad text-center px-12 py-4 rounded-xl">
+        <aside class="shadow rounded-lg"></aside>
+        <span class="font-bold">Try it free 7days</span> then $20/mo. theerafter
+      </aside>
+      <form action="#" onsubmit="formValidation()" class="w-full  rounded-xl bg-white text-center p-4 md:p-6 flex flex-col gap-4">
+
+        <aside class="shadow rounded-lg"></aside>
+
+        <div class="inputbx">
+          <input type="text" id="firstname" placeholder="First Name">
+          <label id="firstnamelb" for="firstName">Field can not be empty</label>
+        </div>
+
+        <div class="inputbx">
+          <input type="text" id="lastname" placeholder="Last Name">
+          <label id="lastnamelb" for="lastname">Field can not be empty</label>
+        </div>
+
+        <div class="inputbx">
+          <input type="text" id="email" placeholder="Email Address">
+          <label id="emaillb" for="email">Looks like this is not an email</label>
+        </div>
+
+        <div class="inputbx">
+          <input type="text" id="password" placeholder="Password">
+          <label id="passwordlb" for="password">Please enter a password</label>
+        </div>
+
+        <div id="btnbx" class="inputbx relative">
+          <button id="submit" type="submit" class="rounded-lg text-white w-full">
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <span class="">me</span>
+        </div>
+        <div><small class=" text-gray-400">By clicking on the button you are agreeing to our <span
+              class="text-red-600 font-bold">Terms and Services</span></small></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">SURU EMMANUEL</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

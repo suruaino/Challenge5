@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Red: rgb(255, 122, 122); 
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* height: 100vh; */
+    font-family: "Poppins", sans-serif;
+
+}
+
+.right aside{
+    background-color: rgb(110, 76, 182);
+    /* box-shadow: 0 6px 4px rgba(42, 19, 19, 0.346); */
+    position: relative;
+    
+}
+.right aside .shadow{
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    z-index: -1;
+    transform: translateY(7px)
+}
+form{
+    position: relative;
+}
+form .shadow{
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    z-index: -1;
+    transform: translateY(7px)
+}
+form .inputbx{
+    width: 100%;
+}
+form .inputbx input{
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: black;
+}
+form label{
+    visibility: hidden;
+    color: red;
+}
+form #submit{
+    background: var(--Green);
+    padding: 1rem 2rem;
+    z-index: 10;
+    width: 100%;
+    
+}
+#btnbx{
+    isolation: isolate;
+}
+#btnbx span{
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    border-radius: 5px;
+    inset: 0;
+    z-index: -1;
+    transform: translateY(7px)
+}
+
+@media only screen and (min-width:768px){
+    .right{
+        min-width: 20rem;
+    }
+    .left{
+        min-width: 15rem;
+    }
+}
